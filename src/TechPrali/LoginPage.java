@@ -101,6 +101,16 @@ public class LoginPage implements ActionListener {
 		fr.setLayout(null);
 		fr.setVisible(true);
 	}
+	public boolean log_test(String username, String pass) {
+		String username_test="kaushal";
+		String pass_test="1235";
+		boolean result = false;
+		if (username== username_test && pass == pass_test) {
+			result = true;
+
+		}
+		return result;
+	}
 	public static void main(String[] args) {
 		new LoginPage();
 	}
