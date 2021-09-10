@@ -1,16 +1,13 @@
 package TechPrali;
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
 public class Sell implements ActionListener {
 	Font fon1,fon2,fon3;
 	JLabel lbl_head,lbl_mobilename,lbl_company,lbl_ram,lbl_storage,lbl_price,lbl_processor,lbl_camera,lbl_contact;
@@ -28,8 +25,7 @@ public class Sell implements ActionListener {
 		lbl_head.setFont(fon1);
 		lbl_head.setBounds(180,20,400,50);
 		panel.add(lbl_head);
-		
-		
+
 		lbl_mobilename=new JLabel("Mobile name:");
 		lbl_mobilename.setFont(fon2);
 		lbl_mobilename.setBounds(20,80,300,50);
@@ -190,7 +186,6 @@ public class Sell implements ActionListener {
 	    					int val_contact=Integer.parseInt(contact);
 	    				} catch (NumberFormatException e1) {
 	    					JOptionPane.showMessageDialog(null,"please use integer value in contact");
-	    					return;
 	    				}
 	        	}
 		     }

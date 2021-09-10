@@ -11,9 +11,7 @@ import java.awt.Font;
 import java.sql.*;
 public class Buy{
     DefaultTableModel model;
-
     JTable jt;
-    
     Font fon,fon1;
     public Buy(JPanel panel) {
     	model= new DefaultTableModel();
@@ -44,8 +42,6 @@ public class Buy{
         	ResultSet rs=db.select(query);
         	DefaultTableModel model=(DefaultTableModel)jt.getModel();
         	model.setRowCount(0);
-//        	model.fireTableDataChanged();
-//        	jt.repaint();
             int i=0;
           
             while(rs.next()){
@@ -53,9 +49,6 @@ public class Buy{
                 model.addRow(new Object[]{rs.getString(1), rs.getString(2),rs.getString(3),
                 		rs.getString(4),rs.getString(5), rs.getString(6),rs.getString(7),
                 		rs.getString(8),rs.getString(9),rs.getString(10)});
-                
-//            	((AbstractTableModel) jt.getModel()).fireTableCellUpdated(1, 0);
-            	
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());

@@ -107,7 +107,6 @@ public class LoginPage implements ActionListener {
 		boolean result = false;
 		if (username== username_test && pass == pass_test) {
 			result = true;
-
 		}
 		return result;
 	}
