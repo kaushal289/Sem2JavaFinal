@@ -1,13 +1,10 @@
 package TechPrali;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
-
-import javax.swing.AbstractButton;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -17,7 +14,6 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
-
 public class Details implements ActionListener {
 	JLabel lbl_topic,lbl_select;
 	JTextField txt_id;
@@ -31,10 +27,8 @@ public class Details implements ActionListener {
 	public void del(JPanel panel,String user) {
 		this.user=user;
 		this.panel=panel;
-		
 		jt= new JTable();
 		model = (DefaultTableModel) jt.getModel();
-		
     	jt.setFont(fon1);
     	jt.setRowHeight(40);
     	jt.setBackground(new Color(211,244,252));
@@ -65,17 +59,14 @@ public class Details implements ActionListener {
                 		rs.getString(8),rs.getString(9),rs.getString(10)});
                 System.out.println(rs.getString(1));
             }
-        } catch (Exception e) {
+        }
+		catch (Exception e) {
             System.out.println(e.getMessage());
         }
         pg = new JScrollPane(jt);
         pg.setBounds(0,150,1180,250);
         panel.add(pg);
-        
-        
         }
-	
-		
 	public Details(JPanel panel,String user) {
 		this.user=user;
 		this.panel=panel;
@@ -102,9 +93,7 @@ public class Details implements ActionListener {
 		btn_delete.addActionListener(this);
 		panel.add(btn_delete);
 		del(panel,user);
-		
 	}
-		
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource()==btn_delete) {
@@ -121,15 +110,12 @@ public class Details implements ActionListener {
 			panel.revalidate();
 			new Details(panel, user);
 			del(panel,user);
-			
 		}
-		 
 	}
 		catch(Exception ex) {
 			ex.printStackTrace();
 			JOptionPane.showMessageDialog(btn_delete, "ID not found.");
-
-		}
+			}
 		}
 	}
 }

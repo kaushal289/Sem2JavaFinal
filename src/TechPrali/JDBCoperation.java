@@ -1,12 +1,9 @@
 package TechPrali;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
- 
 
 public class JDBCoperation {
     Connection con;
@@ -38,17 +35,15 @@ public class JDBCoperation {
 		        throwables.printStackTrace();
 		        
 		    }
-		
 
 		return val;
-}
+		}
 		public ResultSet select(String query) {
 			try {
 				 rows =st.executeQuery(query);
 		}
 			catch(SQLException throwables) {
 				throwables.printStackTrace();
-				
 			}
 			return rows;
 			
@@ -61,24 +56,18 @@ public class JDBCoperation {
 				throwables.printStackTrace();
 			}
 			return values;
-		
 	}
-	
-
 
 	public int executeDelete(String sql) {
 		try {
 			values=st.executeUpdate(sql);
-			
 		}
 		catch(SQLException throwables) {
 			throwables.printStackTrace();
 		}
-		// TODO Auto-generated method stub
 		return values;
 	}
 	public static void main(String[]args) {
     	new JDBCoperation();
-    
 	}
 }
