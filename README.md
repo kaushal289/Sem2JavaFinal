@@ -7,7 +7,7 @@ Tech Prali is a Java-based application. This app is primarily designed for buyin
 <h2 align="left">Aim </h2>
 The main aim of this project is to comfort a new smartphone buyer, to choose a smartphone that they are likely going to buy.
 <h2 align="left">Some GUI glimpse of app</h2>
-The first window after running the app is shownbelow
+The first window after running the app is shown below:
 <img src="s6.PNG"/>
 This is the registration window
 <img src="s7.PNG"/>
@@ -15,12 +15,15 @@ The page below opens after login and is a part of main page.
 <img src="s1.PNG"/>
 If the user is female such GUI is shown.
 <img src="s5.PNG"/>
-The image below is the sell panel.
+The image below is the sell panel where user describes the smartphone that they want to sell.
 <img src="s2.PNG"/>
-The image below is the details panel.
+The image below is the details panel where users smartphone details are shown. User also can delete the smartphone by entering the id..
 <img src="s3.PNG"/>
-The image below is the profile panel.
+The image below is the profile panel where you can update your profile.
 <img src="s4.PNG"/>
+
+<h2 align="left">Conclusion</h2>
+With the help of this app user can find a perfect smartphone. User also cn sell the smartphone. 
 
 
 
