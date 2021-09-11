@@ -1,5 +1,6 @@
 import TechPrali.LoginPage;
 import TechPrali.Mobiledata;
+import TechPrali.Userdata;
 import TechPrali.RegistrationPage;
 import org.junit.jupiter.api.Test;
 
@@ -50,17 +51,28 @@ class AllTests {
         Mobiledata data=new Mobiledata("kaushal","iphone13","apple","8","128","180000","A15 bionic","13","9865558257");
         assertEquals("wrong username",data.getUsername());
     }
-
     @Test
     void Test_mobile_data5(){
         Mobiledata data=new Mobiledata("kaushal","iphone13","apple","8","128","180000","A15 bionic","13","9865558257");
-        assertEquals("",data.getMobilename());
+        assertEquals("iphone13",data.getMobilename());
     }
 
     @Test
     void Test_mobile_data6(){
         Mobiledata data=new Mobiledata("kaushal","iphone13","apple","8","128","180000","A15 bionic","13","9865558257");
-        assertEquals("iphone13",data.getMobilename());
+        assertEquals("",data.getMobilename());
     }
+    @Test
+    void Test_Userdata1(){
+        Userdata udata=new Userdata("kaushal","Kaushal Khanak","khanalkaushal9@gmail.com","Male","1235","1235");
+        assertEquals("kaushal",udata.getUsername());
+    }
+    @Test
+    void Test_Userdata2(){
+        Userdata udata=new Userdata("kaushal","Kaushal Khanak","khanalkaushal9@gmail.com","Male","1235","1235");
+        assertEquals("",udata.getUsername());
+    }
+
+
 
 }
