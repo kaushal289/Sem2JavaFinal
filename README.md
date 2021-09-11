@@ -7,7 +7,7 @@ Tech Prali is a Java-based application. This app is primarily designed for buyin
 <h2 align="left">Aim </h2>
 The main aim of this project is to comfort a new smartphone buyer, to choose a smartphone that they are likely going to buy.
 <h2 align="left">Some GUI glimpse of app</h2>
-<img src="s6.PNG"/>
+<img src="s1.PNG"/>
 
 
 
