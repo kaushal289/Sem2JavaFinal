@@ -13,6 +13,7 @@ public class Buy{
     DefaultTableModel model;
     JTable jt;
     Font fon,fon1;
+
     public Buy(JPanel panel) {
     	model= new DefaultTableModel();
     	jt= new JTable(model);

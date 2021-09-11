@@ -16,6 +16,7 @@ public class Userdata {
 		this.pass = pass;
 		this.conpass = conpass;
 	}
+
 	public String getUsername() {
 		return username;
 	}
