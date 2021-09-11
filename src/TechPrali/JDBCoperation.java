@@ -14,7 +14,7 @@ public class JDBCoperation {
     int values;
     public JDBCoperation() {
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			//Class.forName("com.mysql.jdbc.Driver");
 			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/javaproject","root","1235");
 			if (con!=null) {
 				System.out.println("connected");
@@ -28,9 +28,7 @@ public class JDBCoperation {
 		public int insert(String query) {
 		    try {
 		        
-		    val=st.executeUpdate(query); 
-		    con.commit();
-		    con.close();
+		    val=st.executeUpdate(query);
 		    }catch(SQLException throwables){
 		        throwables.printStackTrace();
 		        
