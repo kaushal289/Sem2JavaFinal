@@ -23,7 +23,7 @@ The image below is the profile panel where you can update your profile.
 <img src="s4.PNG"/>
 
 <h2 align="left">Conclusion</h2>
-With the help of this app user can find a perfect smartphone. User also cn sell the smartphone. 
+With the help of this app user can find a perfect smartphone. User also can sell the smartphone. 
 
 
 
