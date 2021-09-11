@@ -21,7 +21,7 @@ The image below is the details panel where users smartphone details are shown. U
 <img src="s3.PNG"/>
 The image below is the profile panel where you can update your profile.
 <img src="s4.PNG"/>
-The 10 tests that i have done in login, registration, mobile data and user data is showh below.
+The 10 Junit tests that i have done in login, registration, mobile data and user data is showh below.
 <img src="s8.PNG"/>
 
 <h2 align="left">Conclusion</h2>
