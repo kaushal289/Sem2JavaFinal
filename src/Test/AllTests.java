@@ -38,14 +38,12 @@ class AllTests {
         LoginPage reg=new LoginPage();
         boolean result=reg.log_test(usname,pass);
         assertEquals(false,result);
-
     }
     @Test
     void Test_mobile_data3(){
         Mobiledata data=new Mobiledata("kaushal","iphone13","apple","8","128","180000","A15 bionic","13","9865558257");
         assertEquals("kaushal",data.getUsername());
     }
-
     @Test
     void Test_mobile_data4(){
         Mobiledata data=new Mobiledata("kaushal","iphone13","apple","8","128","180000","A15 bionic","13","9865558257");
@@ -56,7 +54,6 @@ class AllTests {
         Mobiledata data=new Mobiledata("kaushal","iphone13","apple","8","128","180000","A15 bionic","13","9865558257");
         assertEquals("iphone13",data.getMobilename());
     }
-
     @Test
     void Test_mobile_data6(){
         Mobiledata data=new Mobiledata("kaushal","iphone13","apple","8","128","180000","A15 bionic","13","9865558257");
@@ -72,7 +69,4 @@ class AllTests {
         Userdata udata=new Userdata("kaushal","Kaushal Khanak","khanalkaushal9@gmail.com","Male","1235","1235");
         assertEquals("",udata.getUsername());
     }
-
-
-
 }

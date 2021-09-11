@@ -111,10 +111,13 @@ public class Details implements ActionListener {
 			new Details(panel, user);
 			del(panel,user);
 		}
+		else{
+			JOptionPane.showMessageDialog(btn_delete, "ID not found.");
+		}
 	}
 		catch(Exception ex) {
 			ex.printStackTrace();
-			JOptionPane.showMessageDialog(btn_delete, "ID not found.");
+
 			}
 		}
 	}
