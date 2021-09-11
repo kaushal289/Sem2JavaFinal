@@ -13,7 +13,7 @@ This is the registration window
 <img src="s7.PNG"/>
 The page below opens after login and is a part of main page.
 <img src="s1.PNG"/>
-If the user is female such GUI is shown.
+If the user is male such GUI is shown.
 <img src="s5.PNG"/>
 The image below is the sell panel where user describes the smartphone that they want to sell.
 <img src="s2.PNG"/>
