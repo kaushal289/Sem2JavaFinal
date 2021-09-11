@@ -35,7 +35,6 @@ public class JDBCoperation {
 		        throwables.printStackTrace();
 		        
 		    }
-
 		return val;
 		}
 		public ResultSet select(String query) {
