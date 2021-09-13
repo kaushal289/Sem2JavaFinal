@@ -35,7 +35,7 @@ class LoginPageTest {
     }
 
     @Test
-    void test_update() {
+    void update_Test() {
         String query = "update register set fullname='" + 2 + "' where username='" + 2 + "'";
         JDBCoperation db = new JDBCoperation();
         int rs = db.Update(query);
